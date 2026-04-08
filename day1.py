@@ -23,8 +23,6 @@ messages = [
     {"role": "user", "content": "What is 2 + 2?"}
 ]
 
-response = openai.chat.completions.create(model="gpt-4.1-nano", messages=messages)
-response.choices[0].message.content
 
 def messages_for(website):
     return [
